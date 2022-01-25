@@ -1,0 +1,24 @@
+{
+  "name": "kumaxim/approve-media-builtins",
+  "description": "Встроенные функции, необходимые для работы темы Approve Media: добавление типов \"Недвижимость\", \"Города\" и ассоциированных с ними дополнительных полей и т.п.",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Maxim Kudryavtsev",
+      "email": "kumaxim@users.noreply.github.com"
+    }
+  ],
+  "require": {
+    "php": "^7.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "ApproveMedia\\SystemBuiltins\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "ApproveMedia\\SystemBuiltins\\Tests\\": "tests/"
+    }
+  }
+}
