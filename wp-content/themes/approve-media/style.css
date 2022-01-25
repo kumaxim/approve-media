@@ -1,0 +1,33 @@
+/*
+ Theme Name:   Approve Media
+ Description:  Approve Media based on Underscode parent theme
+ Author:       Maxim Kudryavtsev
+ Author URI:   https://k-maxim.ru/
+ Template:     understrap
+ Version:      1.0.0
+ License:      Proprietary
+ Text Domain:  approve-media
+*/
+
+.propetry-desc {
+
+}
+
+.propetry-desc a.collapsed:after {
+    content: '+ Show More';
+}
+
+.propetry-desc a:not(.collapsed):after {
+    content: '- Show Less';
+}
+
+.propetry-desc span[id^=collapse-desc].collapse:not(.show) {
+    display: block;
+    /* height = lineheight * no of lines to display */
+    height: 4.5em;
+    overflow: hidden;
+}
+
+.propetry-desc span[id^=collapse-desc].collapsing {
+    height: 4.5em;
+}
